@@ -21,42 +21,42 @@ $(window).on("load", function() {
 
     // CONTACT FORM VALIDATION  
 
-    if($('#contact-form').length){
-      $('#submit').click(function(){
+    // if($('#contact-form').length){
+    //   $('#submit').click(function(){
         
-              var o = new Object();
-              var form = '#contact-form';
+    //           var o = new Object();
+    //           var form = '#contact-form';
         
-              var name = $('#contact-form .name').val();
-              var email = $('#contact-form .email').val();
-              // var phone = $('#contact-form .phone').val();
+    //           var name = $('#contact-form .name').val();
+    //           var email = $('#contact-form .email').val();
+    //           // var phone = $('#contact-form .phone').val();
         
-        if(name == '' || email == '')
-        {
-          $('#contact-form .response').html('<div class="failed">Please fill the required fields.</div>');
-          return false;
-        }
+    //     if(name == '' || email == '')
+    //     {
+    //       $('#contact-form .response').html('<div class="failed">Please fill the required fields.</div>');
+    //       return false;
+    //     }
               
-        $.ajax({
-            url:"sendemail.php",
-            method:"POST",
-            data: $(form).serialize(),
-            beforeSend:function(){
-                $('#contact-form .response').html('<div class="text-info"><img src="images/preloader.gif"> Loading...</div>');
-            },
-            success:function(data){
-                $('form').trigger("reset");
-                $('#contact-form .response').fadeIn().html(data);
-                setTimeout(function(){
-                    $('#contact-form .response').fadeOut("slow");
-                }, 5000);
-            },
-            error:function(){
-                $('#contact-form .response').fadeIn().html(data);
-            }
-        });
-    });
-    }
+    //     $.ajax({
+    //         url:"sendemail.php",
+    //         method:"POST",
+    //         data: $(form).serialize(),
+    //         beforeSend:function(){
+    //             $('#contact-form .response').html('<div class="text-info"><img src="images/preloader.gif"> Loading...</div>');
+    //         },
+    //         success:function(data){
+    //             $('form').trigger("reset");
+    //             $('#contact-form .response').fadeIn().html(data);
+    //             setTimeout(function(){
+    //                 $('#contact-form .response').fadeOut("slow");
+    //             }, 5000);
+    //         },
+    //         error:function(){
+    //             $('#contact-form .response').fadeIn().html(data);
+    //         }
+    //     });
+    // });
+    //}
 
 });
 
