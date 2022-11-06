@@ -502,14 +502,14 @@ color:transparent
 }
 
 @media (min-aspect-ratio: 16/9){
-	.play-video-div .video-section{
+	.play-video-div {
 		width: 100%;
 		height: auto;
 	}
 }
 
 @media (max-aspect-ratio: 16/9){
-		.play-video-div .video-section{
+		.play-video-div {
 			width: auto;
 			height: 100%;
 		}
