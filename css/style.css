@@ -428,6 +428,7 @@ header .menu-btn {
 }
 .main-banner-text {
 	max-width: 770px;
+	position:relative
 }
 .main-banner-text > span {
 	display: inline-block;
@@ -454,6 +455,7 @@ header .menu-btn {
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
+	transition: 0.5s;
 }
 .main-banner-text > h1 {
 	font-weight: 700;
@@ -462,6 +464,12 @@ header .menu-btn {
 	text-transform: capitalize;
 	color: #FFFFFF;
 	margin-bottom: 31px;
+
+}
+
+.main-banner-text h1:hover{
+-webkit-text-stroke: 2px #fff;
+color:transparent	
 }
 .main-banner-text > h1 span {
 	display: inline-block;
@@ -487,6 +495,24 @@ header .menu-btn {
 
 .play-video-div {
 	display: table-cell;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	
+}
+
+@media (min-aspect-ratio: 16/9){
+	.play-video-div .video-section{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9){
+		.play-video-div .video-section{
+			width: auto;
+			height: 100%;
+		}
 }
 .poly1 {
 	display: table-cell;
@@ -1549,6 +1575,9 @@ footer {
 
 .video-section .play-video-div {
 	position: absolute;
+	width: auto;
+	height: 100%;
+	z-index: -1;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%,-50%);
