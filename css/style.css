@@ -514,6 +514,12 @@ color:transparent
 			height: 100%;
 		}
 }
+
+@media (max-width:1200px){
+	.play-video-div{
+		display: none;
+	}
+}
 .poly1 {
 	display: table-cell;
 	width: 130px;
