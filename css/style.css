@@ -310,11 +310,11 @@ header.pb {
 	left: 0;
 	z-index: 9;
 	width: 100%;
-	padding: 60px 0 0 0;
+	padding: 25px 0 0 0;
 	background:inherit;
 }
 header {
-	padding: 60px 0 50px;
+	padding: 10px 0 50px;
 	position: relative;
 	background-color: #191b27;
 }
@@ -1310,13 +1310,20 @@ footer {
 	width: calc(100% - 180px);
 }
 .menu-btn {
-	margin-top: 70px;
+	margin-top: 25px;
+	display: inline-block;
+	position: relative;
+}
+
+.menu-logo{
+
+	margin-top: 50px;
 	display: inline-block;
 	position: relative;
 }
 .mbl-menu {
 	position: relative;
-	top: calc(100vh - 500px);
+	top: calc(100vh - 420px);
 }
 .mbl-menu li {
 	display: inline-block;
