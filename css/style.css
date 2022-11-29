@@ -17,6 +17,7 @@
 13. BLOG PAGE
 14.	404
 15.	ERROR 404
+16. DROPDOWN
 
 =============================================================*/
 
@@ -2767,3 +2768,49 @@ body.no-scroll {
 	top: 10px;
 	letter-spacing: 5px;
 }
+
+.dropdown-toggle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 2px solid #dc3545;
+    font-weight: 600;
+}
+.dropdown-toggle:focus{
+
+    box-shadow: none !important;
+
+}
+
+
+.dropdown-toggle::after {
+
+    display: none;
+
+}
+
+.dropdown-menu{
+
+    width: 100%;
+	background-color:rgb(25,27,39) ;
+        border: 1px solid #F44336;
+        padding: 0rem 0;
+            transform: translate3d(0px, 50px, 0px) !important;
+
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #ffffff;
+    background-color: #dc3545;
+    padding: 10px;
+}
+
+.dropdown-item {
+	color: #fffafa;
+    display: block;
+    width: 100%;
+    padding: 6px;
+
+    }
