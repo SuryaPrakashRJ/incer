@@ -72,6 +72,10 @@ a:hover {
 	text-decoration: none;
 	color: inherit;
 }
+a{
+	font-size: small;
+	
+}
 blockquote, q {
 	quotes: none;
 }
