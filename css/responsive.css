@@ -1,7 +1,7 @@
 
 @media (max-width: 1650px) {
 	.left-sidebar {width: 100px;}
-	.wrapper {width: calc(100% - 100px);}
+	.wrapper {width: calc(100%);}
 	.mbl-menu li a {margin: 0;}
 	header .container {padding: 0 30px;}
 	.pager-sec .container-fluid {padding: 0 30px;}
