@@ -1415,6 +1415,12 @@ footer {
 	padding-right: 0;
 }
 
+@media (min-width: 1900px) {
+	.videoContainer{
+		margin-left: 2rem;
+	}
+}
+
 
 /* ================ ABOUT US (ABOUT PAGE) ==================== */
 
