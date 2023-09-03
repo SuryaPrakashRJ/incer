@@ -432,6 +432,7 @@ header .menu-btn {
 	background: url(../https://via.placeholder.com/1087x1024) #000000;
 	background-repeat: no-repeat;
 	background-position: top right;
+	height: 100vh;
 }
 .banner-slider {
 	padding: 285px 0 163px;
