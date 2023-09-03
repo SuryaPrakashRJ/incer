@@ -443,7 +443,7 @@ header .menu-btn {
 }
 .main-banner-text > span {
 	display: inline-block;
-	color: #A9AFC3;
+	color: white;
 	font-size: 16px;
 	letter-spacing: 0.05em;
 	line-height: 150%;
@@ -460,7 +460,7 @@ header .menu-btn {
 	left: 0;
 	width: 60px;
 	height: 1px;
-	background-color: #a8afc2;
+	background-color: white;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -499,7 +499,7 @@ color:transparent
 	font-weight: 300;
 	font-size: 22px;
 	line-height: 150%;
-	color: #A9AFC3;
+	color: white;
 	max-width: 580px;
 	margin-bottom: 70px;
 }
@@ -1417,7 +1417,7 @@ footer {
 
 @media (min-width: 1900px) {
 	.videoContainer{
-		margin-left: 2rem;
+		margin-left: 3rem;
 	}
 }
 
